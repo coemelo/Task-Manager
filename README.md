@@ -1,19 +1,18 @@
 # Task Manager
-License GNU™
-
-Um projeto para gerenciador de tarefas.
+  Um projeto para gerenciar tarefas em PHP.
 
 ## Instalação
-Este é um projeto em PHP web. Para instalá-lo, você precisa ter um servidor que execute PHP. Após baixar os arquivos, coloque-os em um diretório acessível pelo seu servidor web.
+ Este é um projeto web em PHP, portanto você precisará de um servidor web (como Apache) e do PHP instalados em sua máquina para rodar o projeto.
+ Para instalar o projeto, basta clonar o repositório em sua máquina: ``` git clone https://github.com/seu-usuario/e-o-filme-de-hoje-e.git ```
 
 ## Como usar
-Para utilizar o gerenciador de tarefas, crie uma conta e faça login. Em seguida, você poderá criar, editar e remover tarefas.
+  Para utilizar o gerenciador de tarefas, crie uma conta e faça login. Em seguida, você poderá criar, editar e remover tarefas.
 
-## Contribuindo
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma Issue ou enviar um Pull Request.
+## Contribuição
+ Este é um projeto pessoal, mas sinta-se livre para contribuir. Caso deseje contribuir, abra uma pull request ou entre em contato comigo.
 
 ## Licença
-Este projeto está licenciado sob a licença GNU. Consulte o arquivo [GNU LICENSE](https://www.gnu.org/licenses/gpl-3.0.pt-br.html) para obter mais informações.
+ Este projeto está sob a licença [GNU](https://www.gnu.org/licenses/gpl-3.0.pt-br.html).
 
 ## Autor
 Samuel Melo
