@@ -13,7 +13,7 @@ Para utilizar o gerenciador de tarefas, crie uma conta e faça login. Em seguida
 Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma Issue ou enviar um Pull Request.
 
 ## Licença
-Este projeto está licenciado sob a licença GNU. Consulte o arquivo LICENSE para obter mais informações.
+Este projeto está licenciado sob a licença GNU. Consulte o arquivo [GNU LICENSE](https://www.gnu.org/licenses/gpl-3.0.pt-br.html) para obter mais informações.
 
 ## Autor
 Samuel Melo
