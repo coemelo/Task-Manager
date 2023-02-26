@@ -3,7 +3,7 @@
 
 ## Instalação
   Este é um projeto web em PHP, portanto você precisará de um servidor web (como Apache) e do PHP instalados em sua máquina para rodar o projeto.
-  Para instalar o projeto, basta clonar o repositório em sua máquina: ``` git clone https://github.com/seu-usuario/Task-Manager.git ```
+  Para instalar o projeto, basta clonar o repositório em sua máquina: ``` git clone http://github.com/seu-usuario/Task-Manager.git ```
 
 ## Como usar
   Para utilizar o gerenciador de tarefas, crie uma conta e faça login. Em seguida, você poderá criar, editar e remover tarefas.
