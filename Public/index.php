@@ -1,3 +1,8 @@
+<?php 
+    $nullError = isset($_GET["nullError"]) ? $_GET["nullError"] : '';
+    $invalidError = isset($_GET["invalidError"]) ? $_GET["invalidError"] : '';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,13 +15,19 @@
 </head>
 <body>
     <main>
-        <img src="../Assets/Icons/icon.png" class="logo">
+        <img src="../Assets/Images/logo.png" class="logo">
 
         <p class="subtitle">Digite seus dados no campo abaixo.</p>
 
-        <form action="../Controller/Login.php" method="post">
-            <input type="email" name="email" id="email" class="input" placeholder="E-mail">
-            <input type="password" name="password" id="password" class="input" placeholder="Senha">
+        <form action="../Controller/User/Login.php" method="post">
+            <input type="email" name="email" id="email" class="input" placeholder="E-mail" required>
+            <?php if($nullError == "email"){ echo "<p class=error-message>Campo E-mail não pode estar vazio.</p>"; }
+                  if($invalidError == "email"){ echo "<p class=error-message>E-mail inválido.</p>"; }
+                  ?>
+            <input type="password" name="password" id="password" class="input" placeholder="Senha" required>
+            <?php if($nullError == "password"){ echo "<p class=error-message>Campo Senha não pode estar vazio.</p>"; } 
+                  if($invalidError == "password"){ echo "<p class=error-message>Senha inválida.</p>"; }
+            ?>
 
             <a href="../Controller/ChangePassword.php" class="forgot-password">Esqueci minha senha</a>
 

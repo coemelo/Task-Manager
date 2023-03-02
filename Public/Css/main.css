@@ -73,4 +73,10 @@ html body main form {
   font-weight: bold;
 }
 
+.error-message {
+  font-size: 0.7rem;
+  margin: 0 auto;
+  color: red;
+}
+
 /*# sourceMappingURL=main.css.map */
