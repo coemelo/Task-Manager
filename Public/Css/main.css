@@ -18,7 +18,7 @@ html body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, rgb(219, 239, 246) 0%, rgb(130, 198, 235) 10%, rgb(24, 75, 158) 100%);
+  background: linear-gradient(135deg, #5f97b5 0%, rgb(24, 75, 158) 100%);
 }
 html body main {
   width: 84%;
@@ -60,7 +60,14 @@ html body main form {
 }
 
 .forgot-password {
-  margin: 1rem auto;
+  margin: 1rem auto 0.5rem;
+  font-size: 0.8rem;
+  color: gray;
+  text-decoration: underline;
+}
+
+.register {
+  margin: 0.5rem auto 1rem;
   font-size: 0.8rem;
   color: gray;
   text-decoration: underline;

@@ -1,1 +1,1 @@
-<?= "<p style=margin: 30px 20px; font-family: Arial; font-size: 80px;>403 | ACESSO NEGADO</p>" ?>
+<?= "<p style='margin: 25% 0; font-family: Arial; font-size: 75px; text-align: center;'>1020 | ACESSO NEGADO</p>" ?>
