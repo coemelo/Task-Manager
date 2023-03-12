@@ -23,6 +23,8 @@
                 throw new Exception("error=emailexists");
             }
 
+            $hash = password_hash($password, PASSWORD_BCRYPT);
+
             // Query to add user to the database
             $query = "INSERT INTO users (name, email, password) VALUES (:name, :email, :password)";
             $stmt = $pdo->prepare($query);
@@ -42,12 +44,12 @@
             $stmt = $pdo->prepare($query);
             $stmt->bindParam(':email', $email, PDO::PARAM_STR);
             $stmt->execute();
-            
-            if($stmt->rowCount() > 0){
-                return true;
-            }elseif($stmt->rowCount() == 0){
+
+            if($stmt->rowCount() == 0 ){
                 return false;
             }
+            
+            return true;
         }
 
         public static function getPassword(String $email, PDO $pdo): String{
@@ -58,10 +60,6 @@
             $stmt->execute();
 
             return $stmt->fetchColumn(); //Return query;
-        }
-
-        public static function closeConnection(PDO $pdo){
-            $pdo = null;
         }
     }
 ?>

@@ -31,7 +31,8 @@
         $params = $e->getMessage();
 
     }finally{
-        Database::closeConnection($pdo);
+        
+        $pdo = null;
         header("Location: ".$location.$params);
         
     }

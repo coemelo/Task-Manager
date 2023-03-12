@@ -27,6 +27,7 @@ html body main {
   display: flex;
   flex-flow: column wrap;
   padding: 1rem 1.3rem;
+  text-align: center;
 }
 html body main form {
   display: flex;
@@ -38,16 +39,14 @@ html body main form {
   margin: 0 auto;
 }
 
+.title {
+  margin: 1rem 0;
+}
+
 .subtitle {
   margin: 0 auto 1rem;
   font-size: 0.8rem;
   color: gray;
-}
-
-.input-wrapper {
-  display: flex;
-  width: 90%;
-  margin: 0.3rem auto;
 }
 
 .input {
@@ -75,6 +74,7 @@ html body main form {
 
 .submit {
   height: 2rem;
+  margin: 1rem 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   background: linear-gradient(135deg, #ffa500 0%, #ff8c00 100%);
   font-weight: bold;
@@ -84,6 +84,27 @@ html body main form {
   font-size: 0.7rem;
   margin: 0 auto;
   color: red;
+}
+
+.email-exists {
+  position: fixed;
+  background: linear-gradient(135deg, #dcdee0 0%, #c8d6e5 50%, #b2c2d6 100%);
+  min-width: 50%;
+  min-height: 25%;
+  padding: 1rem;
+  text-align: center;
+  top: 7rem;
+  z-index: 1;
+}
+.email-exists::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
